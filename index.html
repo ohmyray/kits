@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        html,
+        body {
+            height: 100%;
+            /* background-image: linear-gradient(color,color); */
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<script src="./kits/kits.js"></script>
+<script>
+    var r = kits.randomInt(10, 20);
+    console.log(r);
+    var color = kits.randomColor();
+    var color1 = kits.randomColor();
+    console.log(color);
+    // var deg = '45deg';
+    var deg = kits.randomDeg();
+    console.log(deg)
+
+    // document.body.style.backgroundColor = color;
+    document.body.style.backgroundImage = 'linear-gradient('+deg+','+color+','+color1+')'
+    var rgb = kits.randomRGB();
+    console.log(rgb);
+
+    // document.body.style.backgroundColor = 'rgb(' + rgb + ')';
+</script>
+
+</html>
